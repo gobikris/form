@@ -20,9 +20,9 @@ function SignIn() {
   return (
     <div>
       <div className="container">
-        <div className="row justify-content-center mt-4">
-          <div className="col-lg-4 col-md-3 col-12">
-            <div className="d-flex flex-column justify-content-center mt-3 p-3  shadow-lg bg-white rounded-2 h-100 ">
+        <div className="row justify-content-center mt-4 align-items-center p-4">
+          <div className="col-lg-4 col-md-3 col-12 ">
+            <div className="d-flex flex-column justify-content-center mt-5 p-4 align-items-center shadow-lg bg-white rounded-2 h-100 ">
               <form action="" onSubmit={handleSubmit}>
                 <div className="d-flex flex-column gap-4">
                   <img
@@ -32,7 +32,7 @@ function SignIn() {
                   />
 
                   <input
-                    className="form-control"
+                    className="form-control p-2"
                     type="email"
                     name="email"
                     placeholder="Username or Email Address"
@@ -41,7 +41,7 @@ function SignIn() {
                     }
                   />
                   <input
-                    className="form-control"
+                    className="form-control p-2"
                     type="password"
                     name="password"
                     placeholder="Password"

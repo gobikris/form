@@ -21,9 +21,9 @@ function SignUp() {
   return (
     <div className="">
       <div className="container">
-        <div className="row justify-content-center mt-4">
-          <div className="col-lg-4 col-md-8 col-12">
-            <div className="d-flex flex-column justify-content-center mt-3 p-3  shadow-lg bg-white rounded-2 h-100 ">
+        <div className="row justify-content-center mt-5 ">
+          <div className="col-lg-4 col-md-8 col-12 mt-4">
+            <div className="d-flex flex-column justify-content-center mt-5 p-4 shadow-lg bg-white rounded-2  ">
               <form action="" onSubmit={handleSubmit}>
                 <div className="d-flex flex-column gap-4">
                   <img
@@ -32,31 +32,21 @@ function SignUp() {
                     src="https://media.tenor.com/p0G_bmA2vSYAAAAd/login.gif"
                     alt=""
                   />
-                  <div className="d-flex gap-3">
-                    {/* firstname */}
-                    <input
-                      type="text"
-                      className="form-control"
-                      placeholder="First Name"
-                      name="firstname"
-                      onChange={(e) =>
-                        handleChange(e.target.value, e.target.name)
-                      }
-                    />
-                    {/* lastname */}
-                    <input
-                      type="text"
-                      className="form-control"
-                      placeholder="Last Name"
-                      name="lastname"
-                      onChange={(e) =>
-                        handleChange(e.target.value, e.target.name)
-                      }
-                    />
-                  </div>
+                  
+                  {/* fullname */}
+                  <input
+                    className="form-control p-2 "
+                    type="text"
+                    name="fullname"
+                    placeholder="Full Name"
+                    onChange={(e) =>
+                      handleChange(e.target.value, e.target.name)
+                    }
+                  />
+
                   {/* email */}
                   <input
-                    className="form-control"
+                    className="form-control p-2"
                     type="email"
                     name="email"
                     placeholder="Enter Email Address"
@@ -66,7 +56,7 @@ function SignUp() {
                   />
                   {/* password */}
                   <input
-                    className="form-control"
+                    className="form-control p-2"
                     type="password"
                     name="password"
                     placeholder="Password"
@@ -74,35 +64,14 @@ function SignUp() {
                       handleChange(e.target.value, e.target.name)
                     }
                   />
-                  <div className="d-flex gap-3">
-                    {/* phone no */}
-                    <input
-                      className="form-control"
-                      type="number"
-                      name="phoneno"
-                      placeholder="Phone No"
-                      onChange={(e) =>
-                        handleChange(e.target.value, e.target.name)
-                      }
-                    />
-                    {/* pincode */}
-                    <input
-                      className="form-control"
-                      type="number"
-                      name="pincode"
-                      placeholder="Pincode"
-                      onChange={(e) =>
-                        handleChange(e.target.value, e.target.name)
-                      }
-                    />
-                  </div>
+                 
                   {/* button */}
 
                   <button type="submit" className="btn btn-danger fw-bold">
                     Sign Up
                   </button>
                   {/* sign in link */}
-                  <Link className="text-end text-decoration-none" to="/signin">
+                  <Link className="text-end text-decoration-none" to="/">
                     Are you Exisiting user ? Sign In
                   </Link>
                 </div>

@@ -6,8 +6,8 @@ function Error404() {
     <div>
         <div className="container">
             <div className="row justify-content-center mt-5">
-                <div className="col-lg-9 col-md-4 col-12 mt-3">
-                    <Link to="/signin">
+                <div className="col-lg-9 col-md-4 col-12 mt-5">
+                    <Link to="/">
                         <img className='img-fluid' src="https://freefrontend.com/assets/img/html-funny-404-pages/CodePen-404-Page.gif" alt="" />
                         </Link>
                 </div>
